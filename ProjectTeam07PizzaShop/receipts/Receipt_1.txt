@@ -1,0 +1,28 @@
+=============Team 07 Pizza Shop Management System===================
+
+=====================By Dasan and Rohit=============================
+
+===========================Receipt==================================
+
+      Customer's Name: Rohit
+           Pizza Number:   1
+        Toppings Added:   PepperoniBanana Peppers Spinach Black Olives 
+   Pizza Size Selected:   Small
+        Payment Method:   Visa
+Price of current Pizza:   $11.90
+ 
+===================================================================
+ 
+           Pizza Number:   2
+        Toppings Added:   Pepperoni   Pineapple Black Olives Onions 
+   Pizza Size Selected:   Small
+        Payment Method:   Visa
+Price of current Pizza:   $11.45
+ 
+===================================================================
+ 
+ 
+ 
+               Order Total: $36.35
+                Paid Using: **** **** **** 3456
+=============================THE END=============================

@@ -1,0 +1,121 @@
+<?xml version="1.0" standalone="yes"?>
+<xs:schema id="PizzaShopDataSet" targetNamespace="http://tempuri.org/PizzaShopDataSet.xsd" xmlns:mstns="http://tempuri.org/PizzaShopDataSet.xsd" xmlns="http://tempuri.org/PizzaShopDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:element name="PizzaShopDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Orders">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="OrderID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" type="xs:int" />
+              <xs:element name="Toppings">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Size">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="PaymentMethod">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Price">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Pizza">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="PizzaID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" type="xs:int" />
+              <xs:element name="OrderID" type="xs:int" />
+              <xs:element name="SizeID" type="xs:int" />
+              <xs:element name="Price" type="xs:double" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Sizes">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="SizeID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" type="xs:int" />
+              <xs:element name="Size">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="PizzaPrice" type="xs:double" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Toppings">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ToppingID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" type="xs:int" />
+              <xs:element name="ToppingName">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ToppingPrice" type="xs:double" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="ToppingsForPizza">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ToppingsForPizzaID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" type="xs:int" />
+              <xs:element name="PizzaID" type="xs:int" />
+              <xs:element name="ToppingID" type="xs:int" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:Orders" />
+      <xs:field xpath="mstns:OrderID" />
+    </xs:unique>
+    <xs:unique name="Pizza_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:Pizza" />
+      <xs:field xpath="mstns:PizzaID" />
+    </xs:unique>
+    <xs:unique name="Sizes_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:Sizes" />
+      <xs:field xpath="mstns:SizeID" />
+    </xs:unique>
+    <xs:unique name="Toppings_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:Toppings" />
+      <xs:field xpath="mstns:ToppingID" />
+    </xs:unique>
+    <xs:unique name="ToppingsForPizza_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:ToppingsForPizza" />
+      <xs:field xpath="mstns:ToppingsForPizzaID" />
+    </xs:unique>
+  </xs:element>
+  <xs:annotation>
+    <xs:appinfo>
+      <msdata:Relationship name="FK_OrderID" msdata:parent="Orders" msdata:child="Pizza" msdata:parentkey="OrderID" msdata:childkey="OrderID" />
+      <msdata:Relationship name="FK_SizeID" msdata:parent="Sizes" msdata:child="Pizza" msdata:parentkey="SizeID" msdata:childkey="SizeID" />
+      <msdata:Relationship name="FK_PizzaId" msdata:parent="Pizza" msdata:child="ToppingsForPizza" msdata:parentkey="PizzaID" msdata:childkey="PizzaID" />
+      <msdata:Relationship name="FK_ToppingsId" msdata:parent="Toppings" msdata:child="ToppingsForPizza" msdata:parentkey="ToppingID" msdata:childkey="ToppingID" />
+    </xs:appinfo>
+  </xs:annotation>
+</xs:schema>

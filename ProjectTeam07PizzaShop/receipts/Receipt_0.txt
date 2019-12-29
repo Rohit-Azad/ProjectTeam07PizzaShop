@@ -1,0 +1,28 @@
+=============Team 07 Pizza Shop Management System===================
+
+=====================By Dasan and Rohit=============================
+
+===========================Receipt==================================
+
+      Customer's Name: Dasan
+           Pizza Number:   1
+        Toppings Added:   PepperoniPineapple Black Olives Spinach 
+   Pizza Size Selected:   Medium
+        Payment Method:   MasterCard
+Price of current Pizza:   $12.75
+ 
+===================================================================
+ 
+           Pizza Number:   2
+        Toppings Added:   Pepperoni   Green Olives Onions Anchovies 
+   Pizza Size Selected:   Small
+        Payment Method:   MasterCard
+Price of current Pizza:   $12.05
+ 
+===================================================================
+ 
+ 
+ 
+               Order Total: $24.80
+                Paid Using: **** **** **** 7070
+=============================THE END=============================

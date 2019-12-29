@@ -1,0 +1,33 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.539
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProjectTeam07PizzaShop", "ProjectTeam07PizzaShop\ProjectTeam07PizzaShop.csproj", "{094388F1-549C-4E60-A6EB-76CB4953D87B}"
+EndProject
+Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "PizzaShop", "PizzaShop\PizzaShop.sqlproj", "{F17E7CD0-17B4-4B12-AE0D-6CE166B1F76F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{094388F1-549C-4E60-A6EB-76CB4953D87B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{094388F1-549C-4E60-A6EB-76CB4953D87B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{094388F1-549C-4E60-A6EB-76CB4953D87B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{094388F1-549C-4E60-A6EB-76CB4953D87B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F17E7CD0-17B4-4B12-AE0D-6CE166B1F76F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F17E7CD0-17B4-4B12-AE0D-6CE166B1F76F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F17E7CD0-17B4-4B12-AE0D-6CE166B1F76F}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{F17E7CD0-17B4-4B12-AE0D-6CE166B1F76F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F17E7CD0-17B4-4B12-AE0D-6CE166B1F76F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F17E7CD0-17B4-4B12-AE0D-6CE166B1F76F}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9C18E9D4-4D5B-426F-9D7A-F29558B16023}
+	EndGlobalSection
+EndGlobal
